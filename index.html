@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Page 1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<main>
+    <section class="model componentSpacing">
+        <div class="modelContainer screenSize">
+            <div class="modelBody grid-1">
+                <div class="modelBlock dflex-col">
+                    <div class="modelBox">
+                        <table>
+                            <tr>
+                                <h2>Click Button For Color Change</h2>
+                            </tr>
+                        </table>
+                        <!-- Navigation Buttons -->
+                        <div class="buttonGroup">
+                            <button id="themeToggle">Enter The Grid</button>
+                            <button onclick="navigate('page2.html', 'Page 2')">Go to Page 2</button>
+                            <button onclick="navigate('page3.html', 'Page 3')">Go to Page 3</button>
+                        </div>
+                        <!-- Click Response Message -->
+                        <p id="responseMessage" class="responseMsg"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</main>
+</body>
+
+</html>

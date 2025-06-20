@@ -1,0 +1,175 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* THEME TOGGLE BUTTON */
+#themeToggle {
+    margin: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* CYBERPUNK THEME */
+body.cyberpunk {
+    background-color: #b58c8c;
+    color: #ff00ff;
+    width:auto;
+    height:50px;
+}
+
+body.cyberpunk #themeToggle {
+    background: #111;
+    color: #00ffff;
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+}
+
+body.cyberpunk .modelBox {
+    background: #1a1a1a;
+    color: #ff00ff;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 25px #ff00ff80;
+}
+
+/* FUTURISTIC THEME */
+body.futuristic {
+    background-color: #141414;
+    color: #ffcc00;
+}
+
+body.futuristic #themeToggle {
+    background: #222;
+    color: #ffcc00;
+    box-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900;
+}
+
+body.futuristic .modelBox {
+    background: #202020;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    box-shadow: 0 0 20px #ffcc00a0;
+}
+
+/* LAYOUT STRUCTURE */
+.componentSpacing {
+    padding: 150px 20px;
+}
+
+.screenSize {
+    max-width:1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modelBox {
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+/* BUTTON GROUP */
+.buttonGroup {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.buttonGroup button {
+    padding: 12px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 140px;
+}
+
+body.cyberpunk .buttonGroup button {
+    background: #111;
+    color: #00ffff;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+body.futuristic .buttonGroup button {
+    background: #222;
+    color: #ffcc00;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+/* RESPONSE MESSAGE */
+.responseMsg {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+body.futuristic .responseMsg {
+    color: #ffcc00;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+    .modelBox {
+        padding: 16px;
+    }
+
+    .buttonGroup button {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    #themeToggle {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    table td {
+        font-size: 0.95rem;
+    }
+}

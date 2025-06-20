@@ -1,0 +1,152 @@
+/* RESET & BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', 'Segoe UI', sans-serif;
+    transition: background 0.4s ease, color 0.4s ease;
+    background: linear-gradient(135deg, #253877 0%, #915a06 100%);
+    color: #fff;
+}
+
+/* GRADIENT CARD */
+.gradientCard {
+    background: linear-gradient(135deg, #ff00ff 0%, #00ffff 100%);
+    color: #fff;
+    border: none;
+    box-shadow: 0 0 30px #00ffff80, 0 0 40px #ff00ff80;
+    text-shadow: 1px 1px 2px #000;
+    padding: 25px;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: background 0.4s ease;
+}
+
+body.cyberpunk .gradientCard,
+body.futuristic .gradientCard {
+    border: none;
+    color: #fff;
+}
+
+/* BUTTON STYLING */
+button {
+    background: #202020;
+    color: #89d736;
+    border: 2px solid #72291d;
+    box-shadow: 0 0 20px #04b2a9a0;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* LAYOUT CLASSES */
+.componentSpacing {
+    padding: 40px 20px;
+}
+
+.screenSize {
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.dflex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.modelBox {
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+/* TABLE STYLING */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid currentColor;
+    text-align: left;
+}
+
+/* LINK STYLING */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    color: inherit;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* 🔁 RESPONSIVE STYLING */
+@media (max-width: 768px) {
+    .gradientCard {
+        font-size: 0.95rem;
+        padding: 20px;
+        box-shadow: 0 0 20px #00ffff60, 0 0 30px #ff00ff60;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .modelBox {
+        padding: 15px;
+        margin-top: 15px;
+    }
+
+    td {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .componentSpacing {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gradientCard {
+        padding: 15px;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    td {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .dflex-col {
+        gap: 15px;
+    }
+
+    button {
+        font-size: 0.95rem;
+        padding: 10px;
+    }
+}
