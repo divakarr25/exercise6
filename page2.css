@@ -1,113 +1,115 @@
 /* Base Style */
-*
-body {
-  font-family: 'Orbitron', sans-serif;
-  margin: 0;
-  padding: 150px;
-  background-color: #0d0d0d;
-  color: #00ffff;
+* body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 150px;
+    background-color: #0d0d0d;
+    color: #00ffff;
 }
 
 /* Box Wrapper */
 .modelBox {
-  background: #1a1a1a;
-  padding: 30px;
-  border-radius: 10px;
-  border: 2px solid #00ffff;
-  box-shadow: 0 0 20px #00ffff80;
-  max-width: 600px;
-  margin: auto;
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 20px #00ffff80;
+    max-width: 600px;
+    margin: auto;
 }
 
 /* Label */
 label {
-  margin-bottom: 10px;
-  display: block;
-  font-weight: bold;
-  font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
 /* Input Row Container */
 .inputRow {
-  display: flex;
-  gap: 10px;
-  margin: 15px 0;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    margin: 15px 0;
+    flex-wrap: wrap;
 }
 
 /* Input */
 .inputRow input {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #00ffff;
-  background: #111;
-  color: #00ffff;
-  border-radius: 5px;
-  flex: 1;
-  min-width: 150px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #00ffff;
+    background: #111;
+    color: #00ffff;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 150px;
 }
 
 /* Button */
 .inputRow button {
-  padding: 10px 20px;
-  background: #111;
-  color: #00ffff;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: 0 0 10px #00ffff80;
+    padding: 10px 20px;
+    background: #111;
+    color: #00ffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #00ffff80;
 }
 
 /* Output */
 .colorDisplay {
-  margin-top: 20px;
-  padding: 20px;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  background-color: #00000099;
-  color: #00ffff;
-  text-align: center;
-  box-shadow: inset 0 0 10px #00ffff40;
-  word-break: break-word;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #00000099;
+    color: #00ffff;
+    text-align: center;
+    box-shadow: inset 0 0 10px #00ffff40;
+    word-break: break-word;
 }
 
 /* Navigation Button Group */
 .buttonGroup {
-  margin-top: 20px;
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .buttonGroup button {
-  padding: 10px 20px;
-  font-weight: bold;
-  font-size: 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  background: #111;
-  color: #00ffff;
-  box-shadow: 0 0 10px #00ffff;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #111;
+    color: #00ffff;
+    box-shadow: 0 0 10px #00ffff;
 }
 
 @media (max-width: 576px) {
-  body {
-    padding: 30px 15px; /* Reduce overall padding for small screens */
-  }
+    body {
+        padding: 30px 15px;
+        /* Reduce overall padding for small screens */
+    }
 
-  .inputRow {
-    gap: 8px; /* Slightly smaller gap */
-  }
+    .inputRow {
+        gap: 8px;
+        /* Slightly smaller gap */
+    }
 
-  .inputRow input,
-  .inputRow button,
-  .buttonGroup button {
-    font-size: 0.95rem; /* Slightly reduced for balance */
-  }
+    .inputRow input,
+    .inputRow button,
+    .buttonGroup button {
+        font-size: 0.95rem;
+        /* Slightly reduced for balance */
+    }
 
-  .colorDisplay {
-    font-size: 0.95rem;
-    padding: 12px;
-  }
+    .colorDisplay {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
 }
