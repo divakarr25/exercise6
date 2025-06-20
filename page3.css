@@ -73,6 +73,43 @@ button {
     transition: all 0.3s ease;
 }
 
+/* Cyber Welcome Section */
+.modelCoBox {
+    padding: 30px;
+    background: #0d0d0d;
+    border: 2px solid #00ffff;
+    border-radius: 12px;
+    margin-top: 30px;
+    box-shadow: 0 0 30px #00ffff50;
+    text-align: center;
+}
+
+/* Cyber Text Glow */
+.cyberHeading {
+    font-size: 2rem;
+    color: #00ffff;
+    text-shadow:
+        0 0 10px #00ffff,
+        0 0 20px #00ffff,
+        0 0 30px #ff00ff,
+        0 0 40px #ff00ff;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+/* Responsive Headline */
+@media (max-width: 768px) {
+    .cyberHeading {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cyberHeading {
+        font-size: 1.3rem;
+    }
+}
+
 /* TABLE STYLING */
 table {
     width: 100%;
